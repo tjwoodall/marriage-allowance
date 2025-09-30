@@ -49,9 +49,6 @@ paths:
               schema:
                 allOf:
                   - $ref: '#/components/schemas/MarriageAllowanceSaStatusresponse'
-                  - example:
-                      status: Recipient
-                      deceased: false
               examples:
                 example-1:
                   value:
@@ -65,8 +62,6 @@ paths:
               schema:
                 allOf:
                   - $ref: '#/components/schemas/errorResponse'
-                  - example:
-                      code: SA_UTR_INVALID
               examples:
                 invalidUtr:
                   description: Invalid UTR
@@ -88,8 +83,6 @@ paths:
               schema:
                 allOf:
                   - $ref: '#/components/schemas/errorResponse'
-                  - example:
-                      code: UNAUTHORIZED
               examples:
                 unauthorisedUser:
                   description: User not authorised
@@ -103,8 +96,6 @@ paths:
               schema:
                 allOf:
                   - $ref: '#/components/schemas/errorResponse'
-                  - example:
-                      code: NOT_FOUND
               examples:
                 unmatchedRecipient:
                   description: Unmatched recipient
@@ -147,12 +138,6 @@ paths:
             schema:
               allOf:
                 - $ref: '#/components/schemas/MarriageAllowanceSaEligibilityrequest'
-                - example:
-                    nino: AA000003D
-                    firstname: John
-                    surname: Smith
-                    dateOfBirth: 1981-01-31
-                    taxYear: 2018-19
             examples:
               example-1:
                 value:
@@ -171,8 +156,6 @@ paths:
               schema:
                 allOf:
                   - $ref: '#/components/schemas/MarriageAllowanceSaEligibilityresponse'
-                  - example:
-                      eligible: true
               examples:
                 example-1:
                   value:
@@ -185,8 +168,6 @@ paths:
               schema:
                 allOf:
                   - $ref: '#/components/schemas/errorResponse'
-                  - example:
-                      code: SA_UTR_INVALID
               examples:
                 invalidUtr:
                   description: Invalid UTR
@@ -240,8 +221,6 @@ paths:
               schema:
                 allOf:
                   - $ref: '#/components/schemas/errorResponse'
-                  - example:
-                      code: UNAUTHORIZED
               examples:
                 unauthorisedUser:
                   description: User not authorised
@@ -255,8 +234,6 @@ paths:
               schema:
                 allOf:
                   - $ref: '#/components/schemas/errorResponse'
-                  - example:
-                      code: NOT_FOUND
               examples:
                 unmatchedRecipient:
                   description: Unmatched recipient
