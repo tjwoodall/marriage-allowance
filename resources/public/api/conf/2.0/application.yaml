@@ -26,6 +26,9 @@ servers:
   - url: https://api.service.hmrc.gov.uk
     description: Production
     variables: {}
+  - url: https://test-api.service.hmrc.gov.uk
+    description: Sandbox
+    variables: {}
 paths:
   /marriage-allowance/sa/{utr}/status:
     get:
